@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -8,15 +9,19 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
   <link rel="stylesheet" href="node_modules/bootstrap/scss/style.css">
-
-
+  <style>
+    .carouselManual {
+      width: 500px;
+      height: 1000px;
+    }
+  </style>
   <title>Bootstrap</title>
 </head>
 
 <body>
 
   <!--INIT Navegação cabeçario do site-->
-  <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-gradient-primary">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary">
     <div class="container">
       <a class="navbar-brand h1 mb-0" href="#">Curso</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
@@ -37,7 +42,6 @@
             <a class="nav-link" href="#">Depoimentos</a>
           </li>
         </ul>
-
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop" data-hover="dropdown">
@@ -64,7 +68,7 @@
   <!--END Navegação-->
 
   <!--INIT Carousel -->
-  <div id="carouselSite" class="carousel slide" data-ride="carousel">
+  <div id="carouselSite" class="carousel slide carouselManual" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="carouselSite" data-slide-to="0" class="active"></li>
       <li data-target="carouselSite" data-slide-to="1"></li>
@@ -80,28 +84,28 @@
           <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item ">
         <img src="/images/02.jpg" class="img-fluid d-block">
         <div class="carousel-caption d-none d-md-block text-white">
           <h1>Amanhecer do dia</h1>
-          <p class="lead">It has survived not only five centuries, but also 
+          <p class="lead">It has survived not only five centuries, but also
             the leap into electronic typesetting, remaining essentially unchanged.</p>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item ">
         <img src="/images/noite.jpg" class="img-fluid d-block">
         <div class="carousel-caption d-none d-md-block text-white">
           <h1>A Noite Clara</h1>
-          <p class="lead">It was popularised in the 1960s with the release of 
+          <p class="lead">It was popularised in the 1960s with the release of
             Letraset sheets containing Lorem Ipsum passages</p>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item ">
         <img src="/images/tarde.jpg" class="img-fluid d-block">
         <div class="carousel-caption d-none d-md-block text-white">
           <h1>Pôr do Sol Mais Lindo</h1>
-          <p class="lead">more recently with desktop publishing software 
-          like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p class="lead">more recently with desktop publishing software
+            like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
       </div>
     </div>
@@ -132,10 +136,10 @@
           <nav class="nav nav-pills flex-column">
             <a href="#item1" class="nav-link">Estados</a>
             <nav class="nav nav-pills flex-column">
-                <a href="#item1-1" class="nav-link ml-3">Estado de Alagoas</a>
-                <a href="#item1-2" class="nav-link ml-3">Estado de Pernambuco</a>
-                <a href="#item1-3" class="nav-link ml-3">Estado de Salvador</a>
-                <a href="#item1-4" class="nav-link ml-3">Estado de Maranhão</a>
+              <a href="#item1-1" class="nav-link ml-3">Estado de Alagoas</a>
+              <a href="#item1-2" class="nav-link ml-3">Estado de Pernambuco</a>
+              <a href="#item1-3" class="nav-link ml-3">Estado de Salvador</a>
+              <a href="#item1-4" class="nav-link ml-3">Estado de Maranhão</a>
             </nav>
 
             <a href="#item2" class="nav-link my-2">Corregedoria</a>
@@ -158,41 +162,57 @@
           <p>Aqui é mostrado um Resumo de alguns estados do Nordeste</p>
 
           <h5 id="item1-1">Alagoas</h5>
-          <p>Alagoas é uma das 27 unidades federativas do Brasil. Está situado no leste da região Nordeste e tem como limites Pernambuco 
-            (N e NO), Sergipe (S), Bahia (SO) e o Oceano Atlântico (L). Ocupa uma área de 27.778,506 km², sendo ligeiramente maior que o Haiti. 
-            Sua capital é Maceió e a sede administrativa 
+          <p>Alagoas é uma das 27 unidades federativas do Brasil. Está situado no leste da região Nordeste e tem como
+            limites Pernambuco
+            (N e NO), Sergipe (S), Bahia (SO) e o Oceano Atlântico (L). Ocupa uma área de 27.778,506 km², sendo
+            ligeiramente maior que o Haiti.
+            Sua capital é Maceió e a sede administrativa
             é o Palácio República dos Palmares. O atual governador é Renan Filho (MDB).</p>
 
           <h5 id="item1-2">Pernambuco</h5>
-          <p>Pernambuco é uma das 27 unidades federativas do Brasil. Está localizado no centro-leste da região Nordeste e tem como limites os estados da Paraíba (N), 
-            do Ceará (NO), de Alagoas (SE), da Bahia (S) e do Piauí (O), além de ser banhado pelo oceano Atlântico (L). 
-            Ocupa uma área de 98 149,119 km² (pouco menor que a Coreia do Sul). Também fazem parte do seu território os arquipélagos de Fernando de Noronha e São Pedro e São Paulo. 
-            Sua capital é Recife e a sede administrativa é o Palácio do Campo das Princesas. O atual governador é Paulo Câmara (PSB).</p>
+          <p>Pernambuco é uma das 27 unidades federativas do Brasil. Está localizado no centro-leste da região Nordeste
+            e tem como limites os estados da Paraíba (N),
+            do Ceará (NO), de Alagoas (SE), da Bahia (S) e do Piauí (O), além de ser banhado pelo oceano Atlântico (L).
+            Ocupa uma área de 98 149,119 km² (pouco menor que a Coreia do Sul). Também fazem parte do seu território os
+            arquipélagos de Fernando de Noronha e São Pedro e São Paulo.
+            Sua capital é Recife e a sede administrativa é o Palácio do Campo das Princesas. O atual governador é Paulo
+            Câmara (PSB).</p>
 
           <h5 id="item1-3">Salvador</h5>
-          <p>Salvador, fundada como São Salvador da Bahia de Todos os Santos (em português arcaico), 
-            é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia, música e arquitetura, 
-            também reconhecidas internacionalmente. A influência africana em muitos aspectos culturais da cidade a torna o centro da cultura afro-brasileira.[7][8][9] Primeira sede da administração colonial portuguesa do Brasil, 
-            a cidade é uma das mais antigas da América e uma das primeiras cidades planejadas no mundo, ainda no período do Renascimento. 
-            Sua fundação em 1549 por Tomé de Sousa ocorreu por conta da implantação do Governo-Geral do Brasil pelo Império Português.
-            Situa-se nos hemisférios austral e ocidental no cruzamento do paralelo de 12 graus ao sul com meridiano de 38 graus a oeste, 
-            cujas coordenadas mais específicas são determinadas a 
+          <p>Salvador, fundada como São Salvador da Bahia de Todos os Santos (em português arcaico),
+            é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do
+            Brasil, Salvador é notável em todo o país pela sua gastronomia, música e arquitetura,
+            também reconhecidas internacionalmente. A influência africana em muitos aspectos culturais da cidade a torna
+            o centro da cultura afro-brasileira.[7][8][9] Primeira sede da administração colonial portuguesa do Brasil,
+            a cidade é uma das mais antigas da América e uma das primeiras cidades planejadas no mundo, ainda no período
+            do Renascimento.
+            Sua fundação em 1549 por Tomé de Sousa ocorreu por conta da implantação do Governo-Geral do Brasil pelo
+            Império Português.
+            Situa-se nos hemisférios austral e ocidental no cruzamento do paralelo de 12 graus ao sul com meridiano de
+            38 graus a oeste,
+            cujas coordenadas mais específicas são determinadas a
             partir do marco da fundação da cidade, no Forte de Santo Antônio da Barra.</p>
 
           <h5 id="item1-4">Maranhão</h5>
-          <p>Maranhão é uma das 27 unidades federativas do Brasil, localizada na Região Nordeste do país. Limita-se com três estados brasileiros: Piauí (leste), Tocantins (sul e sudoeste) e Pará (oeste), além do Oceano Atlântico (norte). Com área de 331 937,450 km² e com 217 municípios, 
-            é o segundo maior estado da região Nordeste e o oitavo maior estado do Brasil. Com uma população de 7 035 055 habitantes[7], é o 11º estado mais populoso do país. A capital e cidade mais populosa é São Luís. Outros municípios com população superior a cem mil habitantes são Imperatriz, São José de Ribamar, Timon, Caxias, Codó, Paço do Lumiar, Açailândia e Bacabal. 
-            Em termos de produto interno bruto, é o quarto estado mais rico da Região Nordeste do Brasil e o 17º estado mais rico do Brasil. As principais atividades econômicas são a indústria (o trabalho de transformar alumínio e alumina, celulose, alimentícia, madeireira), os serviços, o extrativismo vegetal (babaçu), a agricultura (soja, mandioca, arroz, milho) e a pecuária. 
+          <p>Maranhão é uma das 27 unidades federativas do Brasil, localizada na Região Nordeste do país. Limita-se com
+            três estados brasileiros: Piauí (leste), Tocantins (sul e sudoeste) e Pará (oeste), além do Oceano Atlântico
+            (norte). Com área de 331 937,450 km² e com 217 municípios,
+            é o segundo maior estado da região Nordeste e o oitavo maior estado do Brasil. Com uma população de 7 035
+            055 habitantes[7], é o 11º estado mais populoso do país. A capital e cidade mais populosa é São Luís. Outros
+            municípios com população superior a cem mil habitantes são Imperatriz, São José de Ribamar, Timon, Caxias,
+            Codó, Paço do Lumiar, Açailândia e Bacabal.
+            Em termos de produto interno bruto, é o quarto estado mais rico da Região Nordeste do Brasil e o 17º estado
+            mais rico do Brasil. As principais atividades econômicas são a indústria (o trabalho de transformar alumínio
+            e alumina, celulose, alimentícia, madeireira), os serviços, o extrativismo vegetal (babaçu), a agricultura
+            (soja, mandioca, arroz, milho) e a pecuária.
             Possui um dos menores Índices de Desenvolvimento Humano (IDH) do país, com 0,687 pontos.</p>
-          
+
         </div>
       </div>
-
     </div>
-
-
-
   </div>
+
+ 
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
